@@ -1,0 +1,12 @@
+  pct create $1 /zfs_junk/isos/template/cache/rockylinux-8-default_20210929_amd64.tar.xz \
+      -arch amd64 \
+      -ostype centos \
+      -hostname $2 \
+      -cores 1 \
+      -memory 1024 \
+      -swap 0 \
+      -storage caution \
+      -password="asdfjk" \
+      -nameserver="1.1.1.1 1.0.0.1 9.9.9.9" \
+      -net0 name=eth0,bridge=vmbr0,firewall=0,gw=192.168.0.1,ip=dhcp,type=veth \
+      -start 1
