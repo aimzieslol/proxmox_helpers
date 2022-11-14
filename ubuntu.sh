@@ -5,6 +5,7 @@
       -cores 1 \
       -memory 1024 \
       -swap 0 \
+      -cmode shell \
       -storage caution \
       -password="asdfjk" \
       -nameserver="1.1.1.1 1.0.0.1 9.9.9.9" \

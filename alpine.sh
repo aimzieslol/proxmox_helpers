@@ -1,11 +1,12 @@
-  pct create $1 /zfs_junk/isos/template/cache/alpine-3.15-default_20211202_amd64.tar.xz \
+  pct create $1 /bad_btrfs/template/cache/alpine316.tar.gz \
       -arch amd64 \
       -ostype alpine \
       -hostname $2 \
       -cores 1 \
       -memory 1024 \
       -swap 0 \
-      -storage caution \
+      -storage bad_btrfs \
+      -cmode shell \
       -password="asdfjk" \
       -nameserver="1.1.1.1 1.0.0.1 9.9.9.9" \
       -net0 name=eth0,bridge=vmbr0,firewall=0,gw=192.168.0.1,ip=dhcp,type=veth \
