@@ -1,4 +1,4 @@
-  pct create $1 /zfs_junk/isos/template/cache/ubuntu-22.10-standard_22.10-1_amd64.tar.zst \
+  pct create $1 /bad_btrfs/template/cache/ubuntu-22.10-standard_22.10-1_amd64.tar.zst \
       -arch amd64 \
       -ostype ubuntu \
       -hostname $2 \
@@ -6,7 +6,7 @@
       -memory 1024 \
       -swap 0 \
       -cmode shell \
-      -storage caution \
+      -storage bad_btrfs \
       -password="asdfjk" \
       -nameserver="1.1.1.1 1.0.0.1 9.9.9.9" \
       -net0 name=eth0,bridge=vmbr0,firewall=0,gw=192.168.0.1,ip=dhcp,type=veth \
